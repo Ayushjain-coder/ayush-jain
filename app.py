@@ -25,7 +25,7 @@ R = st.slider('R', min_value=0, max_value=255, step=1)
 import cv2
 from  PIL import Image, ImageOps
 
-image = np.ones((200,200,3), np.uint8)
+image = np.ones((200,200), dtype = "uint8")
 
 def import_and_predict(image_data): 
   image_data[:] = [R]
