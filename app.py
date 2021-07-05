@@ -25,7 +25,7 @@ R = st.slider('R', min_value=0, max_value=255, step=1)
 import cv2
 from  PIL import Image, ImageOps
 
-image = np.zeros((255,255,3), np.uint8)
+image = np.zeros((512,512,3), np.uint8)
 
 def import_and_predict(image_data): 
   image_data[:] = [R]
@@ -38,10 +38,10 @@ if st.button("About"):
   st.header(" Ayush Jain")
   st.subheader("Student")
 html_temp = """
-   <div class="" style="background-color:orange;" >
+   <div class="" style="background-color:blue;" >
    <div class="clearfix">           
    <div class="col-md-12">
-   <center><p style="font-size:20px;color:white;margin-top:10px;">Digital Image processing Experiment</p></center> 
+   <center><p style="font-size:20px;color:white;margin-top:10px;">Digital Image processing Mid Term Experiment</p></center> 
    </div>
    </div>
    </div>
