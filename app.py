@@ -31,17 +31,14 @@ import cv2
 from  PIL import Image, ImageOps
 
 img = np.zeros((255,255,255), np.uint8)
+image = image.img_to_array(img)
 
-def import_and_predict(image_data):
-#   image = image.img_to_array(img)
-#   img_reshap= np.expand_dims(image, axis=0)
-#   img_reshap = preprocess_input(img_reshap)
-   
+def import_and_predict(image_data): 
   image_data[:] = [R]
   st.image(image_data, use_column_width=True)
     
 if st.button("Change Color"):
-  result=import_and_predict(img)
+  result=import_and_predict(image)
   
 if st.button("About"):
   st.header(" Ayush Jain")
