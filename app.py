@@ -20,6 +20,8 @@ html_temp = """
    """
 st.markdown(html_temp,unsafe_allow_html=True)
 
+R = st.slider('R', min_value=0, max_value=255, step=1)
+
 import cv2
 from  PIL import Image, ImageOps
 
