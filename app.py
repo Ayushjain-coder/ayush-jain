@@ -19,19 +19,11 @@ html_temp = """
    </div>
    """
 st.markdown(html_temp,unsafe_allow_html=True)
-  
-st.title("""
-        Collor Palette
-         """
-         )
-file= st.file_uploader("Please upload image", type=("jpg", "png"))
-R = st.slider('R', min_value=0, max_value=255, step=1)
 
 import cv2
 from  PIL import Image, ImageOps
 
-img = np.zeros((255,255,255), np.uint8)
-image = image.img_to_array(img)
+image = np.zeros((255,255,255), np.uint8)
 
 def import_and_predict(image_data): 
   image_data[:] = [R]
