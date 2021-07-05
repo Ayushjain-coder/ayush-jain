@@ -9,7 +9,7 @@ scipy>=0.15.1
 sciklt-learn==0.22.1
 matplotlib>=1.4.3
 pandas>=0.19
-flasgger=40.9.4
+flasgger==40.9.4
 streamlit
 Pillow
 opencv-contrib-python-headless 
