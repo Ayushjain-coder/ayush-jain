@@ -29,17 +29,19 @@ R = st.slider('R', min_value=0, max_value=255, step=1)
 
 import cv2
 from  PIL import Image, ImageOps
+
+img = np.zeros((255,255,255), np.uint8)
+
 def import_and_predict(image_data):
-  img = np.zeros((255,255,255), np.uint8)
-  image = image.img_to_array(img)
-  img_reshap= np.expand_dims(image, axis=0)
-  img_reshap = preprocess_input(img_reshap)
+#   image = image.img_to_array(img)
+#   img_reshap= np.expand_dims(image, axis=0)
+#   img_reshap = preprocess_input(img_reshap)
    
   image_data[:] = [R]
   st.image(image_data, use_column_width=True)
     
 if st.button("Change Color"):
-  result=import_and_predict(image)
+  result=import_and_predict(img)
   
 if st.button("About"):
   st.header(" Ayush Jain")
